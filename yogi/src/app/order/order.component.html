@@ -1,0 +1,40 @@
+<div class="all">
+    <br><br><br>
+    <div class="container">
+      <form class="form w-75" [formGroup]="loginForm" (ngSubmit)="onTapOfSubmit(loginForm)">
+        <div class="form-group">
+          <label for="cname">Name:</label><br>
+          <input type="text" class="form-control" style="width: 400px;" name="name" id="cname" placeholder="Name" formControlName="username">
+        </div>
+        <div *ngIf="loginForm.controls.username.errors?.required && submitted">
+            <p class="alert alert-danger" style="width: 400px;">Please Enter Valid Name.</p>
+        </div>
+        
+        <br>
+        <div class="form-group">
+          <label for="qant">Quantity:(in thousand)</label><br>
+          <input type="number" class="form-control" style="width: 400px;" name="quantity" id="qant" placeholder="Quantity of bricks" formControlName="number">
+        </div>
+        <div *ngIf="loginForm.controls.number.errors?.required && submitted">
+          <p class="alert alert-danger" style="width: 400px;">Please Enter Quantity.</p>
+      </div>
+        <br>
+        <div class="form-group">
+          <label for="cno">Your Contact Number: </label><br>
+          <input type="tel" class="form-control" style="width: 400px;" name="contact" id="cno" placeholder="i.e. +91-1234567890" formControlName="phone">
+        </div>
+        
+        <br>
+        <div class="form-group">
+          <label for="place">Place of Delivery:</label><br>
+          <input type="text" class="form-control" style="width: 400px;" name="pname" id="place" placeholder="Address" formControlName="address">
+        </div>
+        
+        <br>
+        <button class="btn btn-success" type="submit">Submit</button>
+
+      </form>
+    </div>
+<br><br>
+    
+</div>

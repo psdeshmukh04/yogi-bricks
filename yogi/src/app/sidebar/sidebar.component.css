@@ -1,0 +1,21 @@
+.header{
+    background-color: grey;
+    height: 174px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;    
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    margin-top: 2%;
+    margin-left: 18%;
+    clear: left;
+}
+.menu{
+    padding: 15px;
+    font-size: 25px;
+
+}

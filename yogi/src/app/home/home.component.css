@@ -1,0 +1,19 @@
+.all{
+    background-color: lightgrey;
+    margin-left: 25%;
+    text-decoration-color: black;
+    top: 0px;
+}
+
+.name{
+    text-align: center;
+}
+
+.img{
+    height: 310px;
+    width: 500px;
+    margin-left: 22%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+

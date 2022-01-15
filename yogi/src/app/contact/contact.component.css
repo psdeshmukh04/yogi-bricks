@@ -1,0 +1,28 @@
+.all{
+    background-color: lightgrey;
+    margin-left: 25%;
+    text-decoration-color: black;
+}
+
+.contact{
+   
+    overflow: hidden;
+    z-index: -1;
+    
+}
+.icon{
+    float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+    border-radius: 100%;
+   
+}
+.text{
+    color: black;
+    float: left;
+    margin-left: 2%;
+   
+}
